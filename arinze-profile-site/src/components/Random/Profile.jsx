@@ -25,7 +25,7 @@ const Profile = () => {
 											<span>Github</span>
 										</div>
 									</a>
-									<a href={item.site} target="_blank">
+									<a href={item.site} target="_blank" rel="noreferrer">
 										<div className="box">
 											<i className="bx bx-globe"></i>
 											<span>Visit Site</span>
