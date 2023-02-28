@@ -10,10 +10,10 @@
    border: $width solid $color;
 }
 
-@mixin set-hero{
+@mixin set-hero($height: 400px){
    display: flex;
    flex-direction: column;
    width: 100%;
-   min-height: 500px;
+   min-height: $height;
    background-color: #0F1729;
 }
