@@ -26,15 +26,15 @@ const Footer = () => {
 			<div className="footerCtner">
         <div className="footerNav">
           <div></div>
-          <div className="services">
+          {/* <div className="services">
             <p className="title">Services</p>
             <ul>
               <li>Web Application</li>
               <li>Mobile Development</li>
-              {/* <li>UI/UX Design</li> */}
+              <li>UI/UX Design</li>
               <li>Cloud Computing</li>
             </ul>
-          </div>
+          </div> */}
           <div></div>
         </div>
         <div className="textIconHlder">

@@ -18,8 +18,8 @@ const Navbar = () => {
         <nav className={click ? "navCtn__link active" : "navCtn__link"}>
           <ul className="nav__link">
             {navLinks.map((anchor, id) => (
-              <li>
-                <NavLink to={anchor.path} key={id}>
+              <li key={id}>
+                <NavLink to={anchor.path} >
                   {anchor.name}
                 </NavLink>
               </li>
