@@ -1,0 +1,76 @@
+@import "../../Styles/variables.scss";
+@import "../../Styles/mixins.scss";
+
+.prfle {
+   padding: 0.8rem 1rem;
+	h2 {
+		text-align: center;
+		color: $background-color;
+	}
+
+   .prjtImgCrd{
+      // @include set-to-flex;
+      margin-top: 0.8rem;
+      .prjtCrd{
+         max-width: 18.75rem;
+         border-radius: 10px;
+         border: 1px solid $quinary-color;
+         
+         .scrnShot{
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            // height: 100%;
+         }
+
+         .prjtcrdTxt{
+            padding: 0.5rem;
+
+            p{
+               color: $background-color;
+               font-size: 0.8rem;
+               font-weight: 500;
+            }
+         }
+
+         .iconHldr{
+            @include set-to-flex($justify-content: space-between);
+            padding: 0.5rem;
+
+            a{
+               border-radius: 25px;
+               border: 1px solid $quinary-color;
+               padding: 0.5rem;
+            }
+
+            .box{
+               // font-size: 1.5rem;
+               @include set-to-flex;
+               color: $background-color;
+               cursor: pointer;
+               transition: all 0.3s ease-in-out;
+
+               &:hover {
+                  color: $primary-color;
+               }
+
+               span{
+                  font-size: 0.8rem;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .prfle {
+      .prjtImgCrd{
+               @include set-to-flex( $flex-direction: column);
+         // .prjtCrd{
+         //    .prjtcrdTxt{
+               
+         //    }
+         // }
+      }
+   }
+}
