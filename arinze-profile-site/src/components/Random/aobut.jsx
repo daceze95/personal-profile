@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import mypic from "../../assets/edited.png";
 import cv from "../../assets/cv.pdf";
 import "./aobut.scss";
@@ -36,11 +36,11 @@ const Aobut = () => {
 				</p>
 
 				<div>
-					<NavLink to={cv} download="Arinze Ezeokwuegbu CV">
+					<Link to={cv} target="_blank" download="Arinze_Ezeokwuegbu_cv.pdf">
 						<button className="learnMore">
 								Download Résumé
 						</button>
-					</NavLink>
+					</Link>
 				</div>
 			</div>
 
