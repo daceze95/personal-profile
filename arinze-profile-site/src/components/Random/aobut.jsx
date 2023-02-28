@@ -36,7 +36,7 @@ const Aobut = () => {
 				</p>
 
 				<div>
-					<Link to={cv} target="_blank" download="Arinze_Ezeokwuegbu_cv.pdf">
+					<Link to={cv} target="_blank" rel="noreferrer" download="Arinze_Ezeokwuegbu_cv.pdf">
 						<button className="learnMore">
 								Download Résumé
 						</button>
