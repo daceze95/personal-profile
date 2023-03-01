@@ -1,0 +1,18 @@
+@import "../../Styles/mixins";
+@import "../../Styles/variables";
+
+.contact{
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   // flex: 1;
+   .cnctTxtCtn{
+      display: flex;
+      flex: 1;
+      @include bordered;
+
+      .cnctTxt{
+         flex: 1;
+      }
+   }
+}

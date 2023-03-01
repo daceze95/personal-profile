@@ -1,3 +1,18 @@
-.portfolio .main_text{
-   
+@import "../../Styles/mixins";
+@import "../../Styles/variables";
+
+.portfolio{
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   // flex: 1;
+   .prflTxtCtn{
+      display: flex;
+      flex: 1;
+      @include bordered;
+
+      .prflTxt{
+         flex: 1;
+      }
+   }
 }
