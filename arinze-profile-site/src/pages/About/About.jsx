@@ -1,6 +1,7 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import './About.scss';
 
 const About = () => {
@@ -17,6 +18,10 @@ const About = () => {
           </h1>
         </div>
       </div>
+      <div className="abtTxtCtn">
+        <div className="abtTxt">Coming soon...</div>
+      </div>
+      <Footer/>
   </div>
   )
 }

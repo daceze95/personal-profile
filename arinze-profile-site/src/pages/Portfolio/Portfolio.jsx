@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import "./Portfolio.scss";
 
 const Portfolio = () => {
@@ -18,6 +19,10 @@ const Portfolio = () => {
 					</h1>
 				</div>
 			</div>
+			<div className="prflTxtCtn">
+        <div className="prflTxt">Coming soon...</div>
+      </div>
+      <Footer/>
 		</div>
 	);
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -19,6 +20,10 @@ const Contact = () => {
 					</h1>
 				</div>
 			</div>
+			<div className="cnctTxtCtn">
+        <div className="cnctTxt">Coming soon...</div>
+      </div>
+      <Footer/>
 		</div>
 	);
 };

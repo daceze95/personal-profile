@@ -16,7 +16,7 @@ const Profile = () => {
 							<div className="prjtcrdTxt">
 								<h3>{item.h3}</h3>
 								<p onClick={() => setShowMore(!showMore)}>
-									{item.p.length > 200 && showMore ? `${item.p.slice(0, 181)}...` : item.p}
+									{item.p.length > 200 && showMore ? `${item.p.slice(0, 181)}...view more` : item.p}
 								</p>
 								<div className="iconHldr">
 									<a href={item.github}>
