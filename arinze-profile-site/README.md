@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## `Developed by:`
 
-Arinze Ezeokwuegbu
+**Arinze Ezeokwuegbu**
 
 ## `Technologies used`
 
