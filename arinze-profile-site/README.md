@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Developed by:
 
-**Arinze Ezeokwuegbu**
+Arinze Ezeokwuegbu
 
 ## Technologies used
 
-**React**\
-**SCSS** for styling.
+React\
+SCSS for styling.
 
 ### Copyrights @ 2023 Arinze Ezeokwuegbu. All Rights Reserved.
