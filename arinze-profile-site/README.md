@@ -2,13 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## `Developed by:`
+## Developed by:
 
-**Arinze Ezeokwuegbu**
+Arinze Ezeokwuegbu
 
-## `Technologies used`
+## Technologies used
 
-**ReactJs**\
-**SCSS** for styling.
+React\
+SCSS for styling.
 
 ### Copyrights @ 2023 Arinze Ezeokwuegbu. All Rights Reserved.
