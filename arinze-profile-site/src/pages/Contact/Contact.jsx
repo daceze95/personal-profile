@@ -23,7 +23,7 @@ const Contact = () => {
 			<div className="cnctTxtCtn">
 		    <div className="container cnctTxt">
       <h1>FormSubmit Demo</h1>
-      <form target="_blank" action="https://formsubmit.co/darlingtonarinze1995@gmail.com" method="POST">
+      <form target="_blank" action="https://formsubmit.co/060ed68156ac1fe61ee779821bb25524" method="POST">
         <div className="form-group">
           <div className="form-row">
             <div className="col">
