@@ -21,8 +21,7 @@ const Contact = () => {
 				</div>
 			</div>
 			<div className="cnctTxtCtn">
-		    <div className="container cnctTxt">
-      <h1>FormSubmit Demo</h1>
+		    <div className="cnctTxt">
       <form target="_blank" action="https://formsubmit.co/060ed68156ac1fe61ee779821bb25524" method="POST">
         <div className="form-group">
           <div className="form-row">
