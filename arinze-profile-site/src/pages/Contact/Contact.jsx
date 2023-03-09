@@ -34,6 +34,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
+	<div className="form-group">
+             <input type="text" name="Subject" className="form-control" placeholder="Subject" required />
+        </div>
         <div className="form-group">
           <textarea placeholder="Your Message" className="form-control" name="message" rows="8" required></textarea>
         </div>
