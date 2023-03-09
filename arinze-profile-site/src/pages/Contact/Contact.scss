@@ -12,7 +12,18 @@
       @include bordered;
 
       .cnctTxt{
-         flex: 1;
+         flex: 1; 
+         padding: 20px 25px;
       }
    }
+}
+
+@media screen and (max-width: 768px){
+   .contact{
+   .cnctTxtCtn{
+      .cnctTxt{
+         padding: 15px 10px;
+      }
+   }
+}
 }
