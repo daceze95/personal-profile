@@ -11,7 +11,6 @@
    background-position-x: 85%;
    background-position-y: 70%;
    background-blend-mode: overlay;
-   z-index: -1;
 
    .main_text{
       color: #fff;  //#94A3B8;
@@ -77,6 +76,8 @@
    .hero{
       @include set-hero($height: 350px);
       background: linear-gradient(rgba(15, 23, 41, 0.95), #0F1729);
+      position: relative;
+      z-index: 2;
    .main_text{
       width: 100%;
       padding-inline: 5%;
@@ -119,7 +120,7 @@
       background-blend-mode: overlay;
       background-attachment: fixed;
       position: relative;
-      z-index: -1;
+      z-index: 2;
 
       .main_text{
          width: 100%;
@@ -163,7 +164,7 @@
       background-blend-mode: overlay;
       background-attachment: fixed;
       position: relative;
-      z-index: -1;
+      z-index: 2;
 
       .main_text{
          width: 100%;
