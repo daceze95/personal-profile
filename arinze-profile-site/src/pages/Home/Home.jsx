@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../../components/Navbar/Navbar";
 import Aobut from "../../components/Random/aobut";
