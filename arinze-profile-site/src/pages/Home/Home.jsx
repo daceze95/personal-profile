@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../../components/Navbar/Navbar";
 import Aobut from "../../components/Random/aobut";
@@ -10,7 +10,7 @@ import Profile from "../../components/Random/Profile";
 
 const Home = () => {
 	return (
-      <div> {/*className="section_Holder"*/}
+      <React.Fragment> 
             <Helmet>
                <title>Home page</title>
             </Helmet>
@@ -20,7 +20,7 @@ const Home = () => {
             <Skills/>
             <Profile/>
             <Footer/>
-      </div>
+      </React.Fragment>
 	);
 };
 

@@ -5,6 +5,11 @@
 //    position: relative;
 // }
 
+.dntScrl{
+   		overflow-y: hidden;
+		scrollbar-width: none;
+}
+
 .empty_div::before{
    content: ' ';
    position: absolute;

@@ -1,5 +1,6 @@
 @import "../../Styles/mixins";
 @import "../../Styles/variables";
+// @import "~bootstrap/scss/bootstrap";
 
 .contact{
    display: flex;
@@ -9,21 +10,17 @@
    .cnctTxtCtn{
       display: flex;
       flex: 1;
-      @include bordered;
+      // @include bordered;
 
       .cnctTxt{
          flex: 1; 
          padding: 20px 25px;
-      }
-   }
-}
 
-/*@media screen and (max-width: 768px){
-   .contact{
-   .cnctTxtCtn{
-      .cnctTxt{
-         padding: 15px 10px;
+         form{
+            .custBtn{
+               background: $primary-color;
+            }
+         }
       }
    }
 }
-}*/

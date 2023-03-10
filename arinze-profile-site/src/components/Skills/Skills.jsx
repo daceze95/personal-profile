@@ -93,11 +93,11 @@ const Skills = () => {
 										<div className="modal">{skill.alt.split(" ")[0]}</div>
 									)}
 								</div>
-								<div id="progressBar">
+								{/* <div id="progressBar">
 									<div id="progress" style={{ width: `${skill.level}` }}>
 										{skill.level}
 									</div>
-								</div>
+								</div> */}
 								<p></p>
 							</div>
 						);
