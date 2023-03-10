@@ -29,8 +29,8 @@ const Hero = () => {
 						className="typeAnimation"
 					/>
 				</h2>
-				<Link to="/about">
-					<button className="learnMore">Learn More</button>
+				<Link to="/contact">
+					<button className="learnMore">Hire Me</button>
 				</Link>
 			</div>
 			{/* <div className="empty_div"></div> */}

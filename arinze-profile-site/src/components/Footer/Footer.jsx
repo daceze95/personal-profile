@@ -3,13 +3,17 @@ import "./Footer.scss";
 
 const Footer = () => {
 	const icon = [
-		{
-      name: "bxl-facebook-circle",
-      url: ""
-    },
+		// {
+    //   name: "bxl-facebook-circle",
+    //   url: ""
+    // },
 		{
       name: "bxl-twitter",
-      url: ""
+      url: "https://twitter.com/EzeokwuegbuA"
+    },
+		{
+      name: "bxl-github",
+      url: "https://github.com/daceze95"
     },
 		{
       name: "bxl-linkedin-square",

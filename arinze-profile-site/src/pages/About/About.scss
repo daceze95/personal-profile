@@ -9,7 +9,7 @@
    .abtTxtCtn{
       display: flex;
       flex: 1;
-      @include bordered;
+      // @include bordered;
 
       .abtTxt{
          flex: 1;

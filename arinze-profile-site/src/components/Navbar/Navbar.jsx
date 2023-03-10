@@ -9,7 +9,6 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
 
 	return (
-    // <div style={{width: "100%"}}>
       <header> 
         <img src="#" alt="logo" />
         
