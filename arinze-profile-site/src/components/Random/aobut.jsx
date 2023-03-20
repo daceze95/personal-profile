@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import mypic from "../../assets/edited.png";
 import cv from "../../assets/cv.pdf";
 import "./aobut.scss";
@@ -36,11 +35,11 @@ const Aobut = () => {
 				</p>
 
 				<div>
-					<Link to={cv} target="_blank" rel="noreferrer" download="Arinze_Ezeokwuegbu_cv.pdf">
+					<a href="https://docs.google.com/document/d/1J_H14VfkUMCtV6UQoFnH-ntMr2bs1q2G/edit?usp=sharing&ouid=117864078080181514179&rtpof=true&sd=true" style={{textDecoration: "none" }}target="_blank" rel="noreferrer" >
 						<button className="learnMore">
 								Download Résumé
 						</button>
-					</Link>
+					</a>
 				</div>
 			</div>
 
