@@ -1,6 +1,5 @@
 import React from "react";
 import mypic from "../../assets/edited.png";
-import cv from "../../assets/cv.pdf";
 import "./aobut.scss";
 
 const Aobut = () => {
