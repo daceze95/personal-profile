@@ -1,26 +1,26 @@
-@import "../../Styles/mixins";
-@import "../../Styles/variables";
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
 // @import "~bootstrap/scss/bootstrap";
 
-.contact{
-   display: flex;
-   flex-direction: column;
-   height: 100vh;
-   // flex: 1;
-   .cnctTxtCtn{
-      display: flex;
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  // flex: 1;
+  .cnctTxtCtn {
+    display: flex;
+    flex: 1;
+    // @include bordered;
+
+    .cnctTxt {
       flex: 1;
-      // @include bordered;
+      padding: 20px 25px;
 
-      .cnctTxt{
-         flex: 1; 
-         padding: 20px 25px;
-
-         form{
-            .custBtn{
-               background: $primary-color;
-            }
-         }
+      form {
+        .custBtn {
+          background: $primary-color;
+        }
       }
-   }
+    }
+  }
 }

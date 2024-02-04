@@ -1,56 +1,56 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 // import {Link} from 'react-router-dom';
 // import MOCK_DATA from './MOCK_DATA.json'
-import "./Sample.scss";
-import Modal from "./Modal";
+import './Sample.scss';
+import Modal from './Modal';
 
 const Sample = () => {
-	// const [value, setValue] = useState("");
-	const [openModal, setOpenModal] = useState(false);
-	// const list = [];
+  // const [value, setValue] = useState("");
+  const [openModal, setOpenModal] = useState(false);
+  // const list = [];
 
-	// useEffect(() => {
-		const clickHandler = () => {
-			return setOpenModal(true);
-		};
+  // useEffect(() => {
+  const clickHandler = () => {
+    return setOpenModal(true);
+  };
 
-		// setTimeout(() => {
-			// clickHandler();
-		// }, 5000);
-	// }, [openModal]);
+  // setTimeout(() => {
+  // clickHandler();
+  // }, 5000);
+  // }, [openModal]);
 
-	// let a, b, c;
+  // let a, b, c;
 
-	// MOCK_DATA.map(item =>
-	//   setList({ item.id, item.first_name})
-	// )
+  // MOCK_DATA.map(item =>
+  //   setList({ item.id, item.first_name})
+  // )
 
-	// console.log(list);
+  // console.log(list);
 
-	// const handleChange = (e) => {
-	//   setValue(e.target.value)
-	// }
+  // const handleChange = (e) => {
+  //   setValue(e.target.value)
+  // }
 
-	// useEffect(()=>{
-	//   MOCK_DATA.filter(val => {
-	//     if(value == ""){
-	//       return setList(val);
-	//     }else{
-	//       if(val.toUpperCase().includes(value.toUpperCase()) ){
-	//         return setList(val);
-	//       }
-	//     }
-	//   })
-	// }, [list])
+  // useEffect(()=>{
+  //   MOCK_DATA.filter(val => {
+  //     if(value == ""){
+  //       return setList(val);
+  //     }else{
+  //       if(val.toUpperCase().includes(value.toUpperCase()) ){
+  //         return setList(val);
+  //       }
+  //     }
+  //   })
+  // }, [list])
 
-	// let JSONDATA = MOCK_DATA.map(vl => vl.first_name);
-	// console.log(JSONDATA)
+  // let JSONDATA = MOCK_DATA.map(vl => vl.first_name);
+  // console.log(JSONDATA)
 
-	return (
-		<div>
-			<div className="container">
-				{/* <input type="text" onChange={handleChange} placeholder="Search..."/> */}
-				{/* <div>
+  return (
+    <div>
+      <div className='container'>
+        {/* <input type="text" onChange={handleChange} placeholder="Search..."/> */}
+        {/* <div>
           {JSONDATA.filter((val) => {
             if(val == ""){
               return val;
@@ -71,11 +71,11 @@ const Sample = () => {
           }
 
         </div> */}
-				<button onClick={clickHandler}>Modal</button>
-				<Modal open={openModal} close={() => setOpenModal(false)} />
-			</div>
-		</div>
-	);
+        <button onClick={clickHandler}>Modal</button>
+        <Modal open={openModal} close={() => setOpenModal(false)} />
+      </div>
+    </div>
+  );
 };
 
 export default Sample;

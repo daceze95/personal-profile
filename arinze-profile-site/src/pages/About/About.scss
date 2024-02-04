@@ -1,18 +1,18 @@
-@import "../../Styles/mixins";
-@import "../../Styles/variables";
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
 
-.about{
-   display: flex;
-   flex-direction: column;
-   height: 100vh;
-   // flex: 1;
-   .abtTxtCtn{
-      display: flex;
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  // flex: 1;
+  .abtTxtCtn {
+    display: flex;
+    flex: 1;
+    // @include bordered;
+
+    .abtTxt {
       flex: 1;
-      // @include bordered;
-
-      .abtTxt{
-         flex: 1;
-      }
-   }
+    }
+  }
 }

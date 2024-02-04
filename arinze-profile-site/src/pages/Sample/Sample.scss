@@ -1,4 +1,4 @@
-@import "../../Styles/mixins.scss";
+@import '../../Styles/mixins.scss';
 // .container{
 //    @include set-to-flex($flex-direction: column);
 //    // @include bordered;
@@ -17,7 +17,7 @@
 //       padding:2px;
 //       // display: none;
 //    }
-   
+
 //    .active{
 //       background-color: rgba(233, 112, 112, 0.808);
 //       padding:2px;
@@ -25,21 +25,19 @@
 //    }
 // }
 
-
-.container{
-   position: fixed;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   height: 100vh;
-   z-index: -1;
-   width: 100%;
-
+.container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  z-index: -1;
+  width: 100%;
 }
-.container button{
-   width: 100px;
-   padding: 10px;
-   border-radius: 5px;
-   border: none;
+.container button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }

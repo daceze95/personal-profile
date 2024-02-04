@@ -1,189 +1,187 @@
 @import '../../Styles/mixins.scss';
 @import '../../Styles/variables.scss';
 
-.hero{
-   @include set-hero;
-   display: flex;
-   justify-content: center;
-   background: url(../../assets/edited.png) no-repeat right center
-   , radial-gradient(circle at 70% 50%, rgba(15, 23, 41, 0.803), #0F1729) no-repeat right center;
-   background-size: contain;
-   background-position-x: 85%;
-   background-position-y: 70%;
-   background-blend-mode: overlay;
+.hero {
+  @include set-hero;
+  display: flex;
+  justify-content: center;
+  background: url(../../assets/edited.png) no-repeat right center,
+    radial-gradient(circle at 70% 50%, rgba(15, 23, 41, 0.803), #0f1729)
+      no-repeat right center;
+  background-size: contain;
+  background-position-x: 85%;
+  background-position-y: 70%;
+  background-blend-mode: overlay;
 
-   .main_text{
-      color: #fff;  //#94A3B8;
-      min-width: 100%;
-      padding-left: 10%;
-      gap: 20px;
-      margin-top: 30px;
+  .main_text {
+    color: #fff; //#94A3B8;
+    min-width: 100%;
+    padding-left: 10%;
+    gap: 20px;
+    margin-top: 30px;
 
-      // applied only on about, contact and portfolio pages
-      .coloredSide{
-         border-left: 5px solid $primary-color;
-         padding-left: 10px;
-         border-radius: 10px 0 0px 10px;
+    // applied only on about, contact and portfolio pages
+    .coloredSide {
+      border-left: 5px solid $primary-color;
+      padding-left: 10px;
+      border-radius: 10px 0 0px 10px;
 
-         span{
-            font-size: 3rem;
-         }
+      span {
+        font-size: 3rem;
       }
+    }
 
-      P{
-         font-size: 1.5rem;
-         font-weight: 400;
-         line-height: 1.5rem;
+    P {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+    }
+
+    span {
+      letter-spacing: 0.2rem;
+      font-size: 3rem;
+      font-weight: bolder;
+    }
+
+    .infiniteType {
+      @include set-to-flex(left, center);
+
+      .typeAnimation {
+        font-size: 1em;
+        margin-left: 5px;
+        color: $primary-color;
       }
+    }
 
-      span{
-         letter-spacing: 0.2rem;
-         font-size: 3rem;
-         font-weight: bolder;
+    .learnMore {
+      @include set-to-flex(center, center);
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      background-color: transparent;
+      border: 2px double $primary-color;
+      color: #fff;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out 0s;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 20px $primary-color;
       }
-
-      .infiniteType{
-         @include set-to-flex(left, center);
-
-         .typeAnimation{
-            font-size: 1em;
-            margin-left: 5px;
-            color: $primary-color
-         }
-      }
-
-      .learnMore{
-            @include set-to-flex(center, center);
-            padding: 10px 25px;
-            border: none;
-            border-radius: 25px;
-            background-color: transparent;
-            border: 2px double $primary-color;
-            color: #fff;
-            font-weight: 600;
-            margin-top: 20px;
-            transition: all 0.3s ease-in-out 0s;
-            cursor: pointer;
-
-            &:hover{
-               box-shadow: 0 0 20px $primary-color
-            }
-      }
-   }
+    }
+  }
 }
 
-@media (min-width: 280px) and (max-width: 349px){
-   .hero{
-      @include set-hero($height: 350px);
-      background: linear-gradient(rgba(15, 23, 41, 0.95), #0F1729);
-      position: relative;
-      z-index: 2;
-   .main_text{
+@media (min-width: 280px) and (max-width: 349px) {
+  .hero {
+    @include set-hero($height: 350px);
+    background: linear-gradient(rgba(15, 23, 41, 0.95), #0f1729);
+    position: relative;
+    z-index: 2;
+    .main_text {
       width: 100%;
       padding-inline: 5%;
       margin-top: 0;
 
-      P{
-         font-size: 1.3rem;
-         font-weight: 400;
-         line-height: 1.5rem;
+      P {
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.5rem;
       }
 
-      span{
-         letter-spacing: 0.15rem;
-         font-size: 1.2rem;
-         font-weight: bolder;
+      span {
+        letter-spacing: 0.15rem;
+        font-size: 1.2rem;
+        font-weight: bolder;
       }
 
-   .infiniteType{
-      @include set-to-flex(left, center);
-      font-size: 1rem;
+      .infiniteType {
+        @include set-to-flex(left, center);
+        font-size: 1rem;
 
-      .typeAnimation{
-         // font-size: 0.8em;
-         margin-left: 5px;
-         color: $primary-color
+        .typeAnimation {
+          // font-size: 0.8em;
+          margin-left: 5px;
+          color: $primary-color;
+        }
       }
-   }
-   .learnMore{
-      padding: 8px 15px;
-   }
+      .learnMore {
+        padding: 8px 15px;
+      }
+    }
+  }
 }
-}
-}
 
-@media (min-width: 350px) and (max-width: 600px){
-   .hero{
-      background-size: cover;
-      background-position-x: 50%;
-      background-position-y: 50%;
-      background-blend-mode: overlay;
-      background-attachment: fixed;
-      position: relative;
-      z-index: 2;
+@media (min-width: 350px) and (max-width: 600px) {
+  .hero {
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
 
-      .main_text{
-         width: 100%;
-         padding: 0 5%;
-         margin-top: 0;
+    .main_text {
+      width: 100%;
+      padding: 0 5%;
+      margin-top: 0;
 
-         P{
-            font-size: 1.2rem;
-            font-weight: 400;
-            line-height: 1.5rem;
-         }
-
-         span{
-            letter-spacing: 0.2rem;
-            font-size: 1.8rem;
-            font-weight: bolder;
-         }
-
-      .infiniteType{
-         @include set-to-flex(left, center);
-
-         .typeAnimation{
-            font-size: 0.8em;
-            margin-left: 5px;
-            color: $primary-color
-         }
+      P {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
       }
 
-      .learnMore{
-         padding: 8px 15px;
+      span {
+        letter-spacing: 0.2rem;
+        font-size: 1.8rem;
+        font-weight: bolder;
       }
-   }
-}
-}
 
-@media (min-width: 601px) and (max-width: 900px){
-   .hero{
-      background-size: cover;
-      background-position-x: 50%;
-      background-position-y: 50%;
-      background-blend-mode: overlay;
-      background-attachment: fixed;
-      position: relative;
-      z-index: 2;
+      .infiniteType {
+        @include set-to-flex(left, center);
 
-      .main_text{
-         width: 100%;
-         padding: 0 5%;
-         margin-top: 0;
-
-
-         P{
-            font-size: 1.2rem;
-            font-weight: 400;
-            line-height: 1.5rem;
-         }
-
-         span{
-            letter-spacing: 0.2rem;
-            font-weight: bolder;
-         }
+        .typeAnimation {
+          font-size: 0.8em;
+          margin-left: 5px;
+          color: $primary-color;
+        }
       }
-   }
+
+      .learnMore {
+        padding: 8px 15px;
+      }
+    }
+  }
 }
 
+@media (min-width: 601px) and (max-width: 900px) {
+  .hero {
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
 
+    .main_text {
+      width: 100%;
+      padding: 0 5%;
+      margin-top: 0;
+
+      P {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+      }
+
+      span {
+        letter-spacing: 0.2rem;
+        font-weight: bolder;
+      }
+    }
+  }
+}

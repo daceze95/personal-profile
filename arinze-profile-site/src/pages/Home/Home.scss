@@ -5,31 +5,30 @@
 //    position: relative;
 // }
 
-.dntScrl{
-   		overflow-y: hidden;
-		scrollbar-width: none;
+.dntScrl {
+  overflow-y: hidden;
+  scrollbar-width: none;
 }
 
-.empty_div::before{
-   content: ' ';
-   position: absolute;
-   top: 0;
-   right: 0;
-   left: 0;
-   opacity: 0.9;
-   width: 100%;
-   height: 100%;
-   z-index: -1;
+.empty_div::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
-.carsel{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 20vh;
-   margin-top: 30px;
+.carsel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-top: 30px;
 }
-
 
 // @media (max-width: 768px){
 // .empty_div::before{

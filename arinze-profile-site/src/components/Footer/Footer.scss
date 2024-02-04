@@ -1,84 +1,82 @@
-@import "../../Styles/variables";
-@import "../../Styles/mixins";
+@import '../../Styles/variables';
+@import '../../Styles/mixins';
 
 .footerCtner {
-   background-color: $background-color;
-   padding: 0.8rem 0rem;
-   display: flex;
-   flex-direction: column;
-   flex: 1;
-   // min-height: 18.75rem;
-   
-   .footerNav{
-      padding: 0rem 1rem;
-      .services{
+  background-color: $background-color;
+  padding: 0.8rem 0rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  // min-height: 18.75rem;
 
-         .title{
-            // color: $background-color;
-            color: $quinary-color;
-            font-weight: 700;
-            font-size: 1.2rem;
-         }
-         
-         ul li{
-            color: $quinary-color;
-            margin-block: 0.5rem;
-            text-decoration: none;
-            list-style: none;
-            // font-size: 0.8rem;
-         }
+  .footerNav {
+    padding: 0rem 1rem;
+    .services {
+      .title {
+        // color: $background-color;
+        color: $quinary-color;
+        font-weight: 700;
+        font-size: 1.2rem;
       }
-   }
 
-   
-	.textIconHlder {
+      ul li {
+        color: $quinary-color;
+        margin-block: 0.5rem;
+        text-decoration: none;
+        list-style: none;
+        // font-size: 0.8rem;
+      }
+    }
+  }
+
+  .textIconHlder {
+    @include set-to-flex($justify-content: space-between);
+    padding: 1rem;
+    border-top: 1px solid $quinary-color;
+
+    .footerText {
+      font-size: 1rem;
+      color: $quinary-color;
+      text-align: center;
+    }
+
+    .iconBox {
       @include set-to-flex($justify-content: space-between);
-		padding: 1rem;
-      border-top: 1px solid $quinary-color;
+      width: 10rem;
+      margin-right: 1rem;
 
-		.footerText {
-			font-size: 1rem;
-			color: $quinary-color;
-			text-align: center;
-		}
+      .bx {
+        font-size: 1.5rem;
+        color: $quinary-color;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
 
-		.iconBox {
-         @include set-to-flex($justify-content: space-between);
-			width: 10rem;
-			margin-right: 1rem;
-
-			.bx {
-				font-size: 1.5rem;
-				color: $quinary-color;
-				cursor: pointer;
-				transition: all 0.3s ease-in-out;
-
-				&:hover {
-					color: $primary-color;
-				}
-			}
-		}
-	}
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-   .footerCtner {
-      .textIconHlder {
-         @include set-to-flex($flex-direction: column);
-         padding: 0.5rem 1rem;
+  .footerCtner {
+    .textIconHlder {
+      @include set-to-flex($flex-direction: column);
+      padding: 0.5rem 1rem;
 
-         .footerText {
-            margin-top: 1rem;
-         }
-
-         .iconBox {
-            margin-right: 0;
-         }
+      .footerText {
+        margin-top: 1rem;
       }
 
-      .textIconHlder > div {
-         margin-top: 1rem;
-         order: -1;
+      .iconBox {
+        margin-right: 0;
       }
-   }
+    }
+
+    .textIconHlder > div {
+      margin-top: 1rem;
+      order: -1;
+    }
+  }
 }
