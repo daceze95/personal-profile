@@ -17,7 +17,7 @@ const Contact = () => {
       </Helmet>
       <Navbar />
 
-      <Box className='main_text' p={[4, 8]}>
+      <Box className='main_text' p={[4, 8]} pt={[24, 20, 20, 4, 4]}>
         <Heading as='h1' mb={4}>
           Contact
         </Heading>
@@ -62,7 +62,7 @@ const Contact = () => {
           </Form>
         </Box>
       </Box>
-      <Footer/>
+      <Footer />
     </Box>
   );
 };
