@@ -13,6 +13,7 @@ const Bio = ({ displayState }) => {
           backdropFilter='auto'
           backdropBlur='5px'
           p='10px'
+          className={displayState ? 'out' : 'in'}
           backgroundColor='#000000CC'
           color='white'>
           <Text textAlign='center' fontWeight='bold' mb={0}>

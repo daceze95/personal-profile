@@ -12,7 +12,7 @@ const About = () => {
         <title>About page</title>
       </Helmet>
       <Navbar />
-      <Box p={[4, 8]} pt={[24, 20, 20, 4, 4]}>
+      <Box p={[4, 8]} pt={[24, 20]}>
         <Heading as='h1' mb={4}>
           About Me
         </Heading>
