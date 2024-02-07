@@ -20,15 +20,14 @@ import Footer from '../../components/Footer/Footer';
 import productArr from './profileArray.jsx';
 
 const Portfolio = () => {
-
   return (
-    <div className='portfolio'>
+    <Box className='portfolio'>
       <Helmet>
         <title>Portfolio page</title>
       </Helmet>
       <Navbar />
 
-      <Box className='hero' p={5} pt={[24, 20, 20, 4, 4]}>
+      <Box className='hero' p={5} pt={[24, 20]}>
         <Box className='main_text'>
           <Heading as='h1' mb={4}>
             Portfolio
@@ -45,17 +44,23 @@ const Portfolio = () => {
                   <Text>{product.p}</Text>
                 </Stack>
               </CardBody>
-              {/* <Divider /> */}
               <CardFooter>
                 <ButtonGroup spacing='2'>
                   <Link to={product.github}>
-                    <Button variant='solid' colorScheme='blue'>
+                    <Button
+                      variant='solid'
+                      colorScheme='blue'
+                      isDisabled={
+                        product.h3.includes('TechPal')
+                          ? true
+                          : false
+                      }>
                       GitHub
                     </Button>
                   </Link>
                   <Link to={product.site}>
                     <Button variant='ghost' colorScheme='blue'>
-                      Visit Site
+                      {product.h3.includes('TechPal') ? 'View' : 'Visit Site'}
                     </Button>
                   </Link>
                 </ButtonGroup>
@@ -65,7 +70,7 @@ const Portfolio = () => {
         </SimpleGrid>
       </Box>
       <Footer />
-    </div>
+    </Box>
   );
 };
 

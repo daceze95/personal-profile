@@ -6,7 +6,6 @@ import {
   Text,
   Flex,
   Heading,
-  Show,
   Button,
 } from '@chakra-ui/react';
 import { EmailIcon } from '@chakra-ui/icons';
@@ -27,7 +26,7 @@ const Hero = () => {
       <Flex
         flexDirection='column'
         style={{ background: '#000' }}
-        pt={[24, 20, 20, 4, 4]}
+        pt={[24, 20]}
         paddingInline={[4, 10]}>
         <Box
           display='flex'
@@ -92,9 +91,7 @@ const Hero = () => {
           <Skills />
         </Box>
       </Flex>
-      <Show>
         <Footer />
-      </Show>
     </Box>
   );
 };

@@ -16,8 +16,7 @@ const Contact = () => {
         <title>Contact page</title>
       </Helmet>
       <Navbar />
-
-      <Box className='main_text' p={[4, 8]} pt={[24, 20, 20, 4, 4]}>
+      <Box className='main_text' p={[4, 8]} pt={[24, 20]}>
         <Heading as='h1' mb={4}>
           Contact
         </Heading>
