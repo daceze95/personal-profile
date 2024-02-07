@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from '../../assets/arinzeEzeokwuegbuWhiteLogo.png';
 import { NavItems as navLinks, NavContact } from './NavLinks';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.scss';
@@ -10,8 +11,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <img src='#' alt='logo' />
-
+      <img src={Logo} alt='logo' />
       {click ? (
         <FaTimes size={30} className='hamburger' onClick={handleClick} />
       ) : (
@@ -31,9 +31,8 @@ const Navbar = () => {
             </li>
           </NavLink>
         </ul>
-      </nav>
+      </nav> 
     </header>
-    // </div>
   );
 };
 
