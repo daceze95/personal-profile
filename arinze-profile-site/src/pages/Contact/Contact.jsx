@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Box, Heading, Divider } from '@chakra-ui/react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Button from 'react-bootstrap/Button';
@@ -10,26 +11,22 @@ import './Contact.scss';
 
 const Contact = () => {
   return (
-    <div className='contact'>
+    <Box display='flex' flexDirection='column' height='100vh'>
       <Helmet>
         <title>Contact page</title>
       </Helmet>
       <Navbar />
 
-      <div className='hero'>
-        <div className='main_text'>
-          <h1 className='coloredSide'>
-            <span>Contact</span>
-          </h1>
-        </div>
-      </div>
-      <div className='cnctTxtCtn'>
-        <div className='cnctTxt'>
+      <Box className='main_text' p={[4, 8]}>
+        <Heading as='h1' mb={4}>
+          Contact
+        </Heading>
+        <Divider mb={6} />
+        <Box>
           <Form
             target='_blank'
             action='https://formsubmit.co/060ed68156ac1fe61ee779821bb25524'
-            method='POST'
-          >
+            method='POST'>
             <Row className='mb-3'>
               <Form.Group as={Col} controlId='formGridEmail'>
                 <Form.Label>Name</Form.Label>
@@ -48,8 +45,7 @@ const Contact = () => {
             </Form.Group>
             <Form.Group
               className='mb-3'
-              controlId='exampleForm.ControlTextarea1'
-            >
+              controlId='exampleForm.ControlTextarea1'>
               <Form.Label>Message</Form.Label>
               <Form.Control
                 as='textarea'
@@ -58,19 +54,16 @@ const Contact = () => {
                 placeholder='Your Message'
               />
             </Form.Group>
-            {/* <Form.Group className="mb-3" controlId="formGridAddress1"> */}
             <Button
               type='submit'
-              className='btn btn-lg btn-primary btn-block custBtn'
-            >
+              className='btn btn-lg btn-primary btn-block custBtn'>
               Submit Form
             </Button>
-            {/* </Form.Group> */}
           </Form>
-        </div>
-      </div>
-      <Footer />
-    </div>
+        </Box>
+      </Box>
+      <Footer/>
+    </Box>
   );
 };
 
