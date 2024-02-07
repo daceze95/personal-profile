@@ -28,7 +28,7 @@ const Portfolio = () => {
       </Helmet>
       <Navbar />
 
-      <Box className='hero' p={5}>
+      <Box className='hero' p={5} pt={[24, 20, 20, 4, 4]}>
         <Box className='main_text'>
           <Heading as='h1' mb={4}>
             Portfolio
