@@ -6,10 +6,12 @@ import {
   Text,
   Flex,
   Heading,
-  Show
+  Show,
+  Button,
 } from '@chakra-ui/react';
+import { EmailIcon } from '@chakra-ui/icons';
+import { Link } from 'react-router-dom';
 import mypic from '../../assets/Arinze-Pics.png';
-
 import Bio from './Bio.jsx';
 import Navbar from '../Navbar/Navbar.jsx';
 import Skills from '../Skills/Skills.jsx';
@@ -29,7 +31,7 @@ const Hero = () => {
         paddingInline={[4, 10]}>
         <Box
           display='flex'
-          flexDirection={['column', 'column', 'column', 'column','row']}
+          flexDirection={['column', 'column', 'column', 'column', 'row']}
           alignItems='center'
           justifyContent='space-between'
           spacing={5}>
@@ -59,6 +61,18 @@ const Hero = () => {
                 style={{ color: '#00f', paddingLeft: '2px' }}
               />
             </Box>
+            <Link to='/contact'>
+              <Button
+                variant='outline'
+                leftIcon={<EmailIcon />}
+                colorScheme='twitter'
+                size={['md', 'md', 'md', 'lg']}
+                mt={5}
+                border='2px'
+                borderColor='twitter.500'>
+                Let's Talk 🤝
+              </Button>
+            </Link>
           </Box>
           <Box
             pos='relative'
@@ -78,9 +92,9 @@ const Hero = () => {
           <Skills />
         </Box>
       </Flex>
-        <Show>
-          <Footer/>
-        </Show>
+      <Show>
+        <Footer />
+      </Show>
     </Box>
   );
 };
