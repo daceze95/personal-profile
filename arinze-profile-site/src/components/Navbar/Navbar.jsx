@@ -70,14 +70,7 @@ const Navbar = () => {
                 <ListItem className='nav-item' pl={4} listStyleType='none'>
                   <NavLink
                     className='nav-link text-end fs-4'
-                    style={{
-                      md: { borderRadius: '10px', ...indicator },
-                      lg: {
-                        border: '1px solid gray',
-                        borderRadius: '10px',
-                        ...indicator,
-                      },
-                    }}
+                    style={indicator}
                     aria-current='page'
                     to={NavContact.path}>
                     {NavContact.name}
