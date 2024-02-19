@@ -19,7 +19,17 @@ const Pitch = () => {
           </Heading>
           <Divider mb={6} />
         </Box>
-
+        <Box display='flex' justifyContent='center' py='4'>
+          <iframe
+            width='853'
+            height='480'
+            src='https://www.youtube.com/embed/JDUN-X1cEO0'
+            frameBorder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowFullScreen
+            title='Embedded youtube'
+          />
+        </Box>
         <Text>
           Hi there! I'm Arinze Ezeokwuegbu, a seasoned full-stack developer with
           a passion for crafting innovative digital solutions. With over 4 years
